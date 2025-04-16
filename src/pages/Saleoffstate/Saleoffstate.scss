@@ -1,0 +1,21 @@
+.Chart {
+    min-height: 500px;
+    min-width: 1000px; /* Tăng kích thước nếu cần */
+    margin-left: 20px;
+}
+.Budget-container {
+    width: 100%;
+    min-width: 800px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    padding: 20px;
+    flex-direction: column;
+}
+.title {
+    font-family: var(--font-family-display);
+    font-weight: 500;
+    color: var(--text-color);
+}

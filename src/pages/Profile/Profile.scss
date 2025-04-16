@@ -1,0 +1,14 @@
+.profile-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    //left: 100px;
+    // width: calc(100% - 240px);
+}
+.input-box {
+    display: flex;
+    flex-direction: column;
+}
+.input-box + .input-box {
+    margin-top: 12px;
+}

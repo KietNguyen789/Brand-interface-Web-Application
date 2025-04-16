@@ -1,0 +1,46 @@
+.formbox-wrapper {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    border-radius: 8px;
+    padding-bottom: 24px;
+    padding-top: 10px;
+    position: relative;
+    //padding-left: 16px;
+    padding: 16px;
+    top: 0px;
+    left: 50%;
+    height: auto;
+    transform: translate(-50%, 0);
+    z-index: 20;
+    margin-bottom: 5px;
+    //margin-left: 5px;
+}
+.label {
+    //color: #0866ff;
+    color: var(--text-color);
+    font-family: var(--font-family-display);
+    font-size: 3rem;
+    font-weight: 600;
+    margin-left: 8px;
+    margin-bottom: 10px;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // height: 130px;
+
+    padding-right: 8px;
+    //align-items: center;
+    justify-content: center;
+    // background: #e8f0fe;
+    margin-left: 8px;
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

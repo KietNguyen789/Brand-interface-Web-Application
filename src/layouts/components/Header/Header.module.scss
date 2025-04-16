@@ -1,0 +1,99 @@
+.wrapper {
+    --search-border-radius: 92px;
+    --search-height: 46px;
+    --search-top-spacer: 9px;
+    --search-button-width: 52px;
+    // do bi dua vao layout flex
+    width: 100%;
+    // lay gia tri tu bien, khong thi lay mac dinh la 60
+    height: 60px; // calc(--default-layout-header-height * --ratio);
+    box-shadow: 0px 1px 1px rgba(212, 190, 190, 0.12);
+    display: flex;
+    justify-content: center;
+    // chi định vị trí fixed
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    z-index: 30;
+}
+.inner {
+    height: 100%;
+    // can than vi moi thiet bi co do phan giai khac nhau
+
+    width: var(--default-layout-width);
+    display: flex;
+    padding-right: var(--default-layout-horizontal-spacer);
+    padding-left: 16px;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--gray);
+}
+.logo-link {
+    // do theo a va the div dang nam theo chieu doc
+    display: flex;
+}
+// cai nao cha thi css truoc
+.actions {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 36px;
+    align-items: center;
+    position: relative;
+}
+
+.more-button {
+    // font-size: 2rem;
+    // vung rong de click de hon
+
+    margin-left: 16px;
+    position: relative;
+    cursor: pointer;
+    font-style: normal;
+    padding: 0px 4px;
+    background-color: transparent;
+}
+.more-logo {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.action-btn {
+    position: relative;
+    background-color: transparent;
+    font-size: 2.2rem;
+    // bam mui ten len de lay ma he 16
+    color: var(--white);
+    padding: 4px 10px;
+    cursor: pointer;
+    display: flex;
+
+    .badage {
+        position: absolute;
+        color: var(--white);
+        font-weight: 600;
+        font-size: 1.4rem;
+        line-height: 2rem;
+        // chu y chieu dai va chieu rong cua box
+        left: calc(10px + 16px);
+        background: var(--primary);
+        min-width: 20px;
+        height: 20px;
+        display: flex;
+
+        justify-content: center;
+        border-radius: 10px;
+        // 40 - 32 / 2 = 4, -20% * 32 = -6.4 => dich len 6 px, 6 - 4 = 2px, can dich len 2px
+        top: -2px;
+    }
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
+}

@@ -1,0 +1,13 @@
+.content {
+    width: 100vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust minmax as needed */
+    gap: 16px; /* Adjust spacing between items */
+    //align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    top: 22px;
+    //justify-content: space-around;
+}

@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    padding: 6px 16px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.06);
+    }
+}
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    // giu duoc dung ty le
+    // tran ra vien tron
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+    margin-left: 12px;
+}
+
+.name {
+    // 16px = 1.6 rem
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.enddate {
+    color: rgba(22, 24, 35, 0.5);
+    font-size: 1.4rem;
+}
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+}

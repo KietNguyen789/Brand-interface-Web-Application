@@ -1,0 +1,50 @@
+.menu-list {
+    width: 223px;
+}
+// neu nam trong menu-list thi no chi css duoc cho cac item trong menu list
+.menu-item {
+    margin-left: 0;
+    width: 100%;
+    justify-content: flex-start;
+    border-radius: 0;
+    padding: 11px 16px;
+    line-height: 1.8rem;
+    &.separate {
+        border-top: 1px solid rgba(22, 24, 35, 0.12);
+    }
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+.menu-popper {
+    padding-bottom: 8px;
+}
+.menu-body {
+    // tránh đè lên thanh cuộn
+    overflow-y: auto;
+}
+.header {
+    position: relative;
+    height: 50px;
+    // keo toan bo khoi len tren
+    margin-top: -8px;
+    // khong bi co khi noi dung ben trong cố chen chuc
+    flex-shrink: 0;
+}
+
+.back-btn {
+    width: 50px;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-title {
+    position: absolute;
+    // dich len 25px;
+    top: 50%;
+    // dich len 25/2 px;
+    //transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

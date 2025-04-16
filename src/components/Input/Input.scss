@@ -1,0 +1,61 @@
+.inputinfo {
+    // background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+    flex: 1;
+    //min-height: 22px;
+    border: 1px solid #dddfe2;
+    color: var(--text-color);
+    font-family: var(--font-family);
+    font-size: 1.7rem;
+    line-height: 16px;
+    padding: 0px 14px;
+    vertical-align: middle;
+    border-radius: 8px;
+    min-height: 40px;
+    //padding: 6px;
+    //max-height: 22px;
+    //display: flex;
+    //justify-content: flex-start;
+    //align-items: center;
+
+    //align-items: center;
+}
+input[type='file'] {
+    padding-left: 0;
+    //padding-top: 10px;
+    border: none;
+}
+input::-webkit-file-upload-button {
+    // dung truc main nam ngang
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--font-family), sans-serif;
+    min-width: 100px;
+    // tinh chinh xac kich thuoc nut, bang kich thuoc font-size + padding
+    padding: 9px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: var();
+    border: 1px solid #dddfe2;
+    // khong select duoc content cua nut
+    -webkit-user-select: none; // safari
+    user-select: none;
+    margin-top: 2px;
+    // + .wrapper {
+
+    //}
+    // uu tien hon class khac
+}
+.inputinfo + .inputinfo {
+    margin-top: 10px;
+}
+.input-error {
+    color: red; /* Màu đỏ cho placeholder khi có lỗi */
+}
+.input-label {
+    font-family: var(--font-family-display);
+    font-weight: 600;
+    color: var(--text-color);
+}

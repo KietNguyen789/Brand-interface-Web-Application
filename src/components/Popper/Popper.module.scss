@@ -1,0 +1,13 @@
+.wrapper {
+    min-height: 100px;
+    padding-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+    max-height: min(-156px + 100vh, 734px);
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 12px;
+    // khi co flex thi noi dung ben trong khong bi tran ra ngoai
+    // mà chứa bằng thẻ cha
+    display: flex;
+    flex-direction: column;
+}
