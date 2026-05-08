@@ -2,13 +2,8 @@ import Button from '~/components/Button';
 import Formbox from '~/components/Formbox';
 import Input from '~/components/Input';
 import Mask from '~/layouts/Mask';
-import classNames from 'classnames/bind';
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import { checklogin } from '~/services/login';
-import { useNavigate } from 'react-router-dom';
-import { login } from '~/libs/redux/sliceAuth';
-import { useAppDispatch, useAppSelector } from '~/libs/redux/hooks';
 import { signupbrand } from '~/services/siginup';
 import PropTypes from 'prop-types';
 const signupFields = [
