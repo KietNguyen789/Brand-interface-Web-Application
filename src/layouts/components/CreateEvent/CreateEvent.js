@@ -86,8 +86,8 @@ function CreateEvent() {
         }
     };
     const listinput = (
-        
-           input_info.map((field,index) => (
+        <div className={cx('input-wrapper')}>
+            { input_info.map((field,index) => (
             <Input
                 error={errors[index]}
                 isRequired
@@ -97,7 +97,10 @@ function CreateEvent() {
                 label={field.label}
             />
            
-        ))
+        ))}
+        </div>
+
+          
     );
 
     const listbutton = (
@@ -115,7 +118,7 @@ function CreateEvent() {
         <>
             {showMask && (
                 <Mask>
-                    <Formbox label="Create Event" inputs={listinput} buttons={listbutton}></Formbox>
+                    <Formbox className={cx("form-create")} label="Create Event" inputs={listinput} buttons={listbutton}></Formbox>
                 </Mask>
             )}
 

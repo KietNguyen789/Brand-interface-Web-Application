@@ -1,0 +1,32 @@
+export const MOCK_VOUCHERS = [
+    {
+        _id: 'mock-voucher-1',
+        event_id: 'mock-event-1',
+        voucher_code: 'VC-SUMMER-001',
+        qr_code: 'https://placehold.co/80x80?text=QR1',
+        value: 50000,
+        description: 'Giảm 50k cho đơn từ 200k',
+        expiration_date: '2025-07-31T23:59:59.000Z',
+        status: 'active',
+    },
+    {
+        _id: 'mock-voucher-2',
+        event_id: 'mock-event-2',
+        voucher_code: 'VC-FLASH-002',
+        qr_code: 'https://placehold.co/80x80?text=QR2',
+        value: 100000,
+        description: 'Giảm 100k cho đơn từ 500k',
+        expiration_date: '2025-08-07T23:59:59.000Z',
+        status: 'active',
+    },
+    {
+        _id: 'mock-voucher-3',
+        event_id: 'mock-event-3',
+        voucher_code: 'VC-SCHOOL-003',
+        qr_code: 'https://placehold.co/80x80?text=QR3',
+        value: 30000,
+        description: 'Giảm 30k không điều kiện',
+        expiration_date: '2025-09-01T23:59:59.000Z',
+        status: 'inactive',
+    },
+];

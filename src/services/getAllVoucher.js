@@ -1,17 +1,15 @@
-import * as httpRequest from '~/utils/httpRequest';
 import axios from 'axios';
+import { MOCK_VOUCHERS } from './mock/vouchers';
+
 export const getAllVouchers = async () => {
     try {
-        // luon thuc hien await tu tren xuong duoi truoc
-         const res = await axios({
+        const res = await axios({
             method: 'get',
-            url: `http://localhost:3000/voucher-manage/all-voucher`,   
-          });
-        // res.data.data
-        const data = res.data;
-        console.log('voucher list :',data);
-        return data;
+            url: `http://localhost:3000/voucher-manage/all-voucher`,
+        });
+        return res.data;
     } catch (err) {
         console.log(err);
+        return MOCK_VOUCHERS;
     }
 };

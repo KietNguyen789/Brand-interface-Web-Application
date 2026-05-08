@@ -12,15 +12,21 @@
     // left: 0;
     // width: 100vw;
     // height: 100bh;
-    background: rgba(0, 0, 0, 0.5);
+   // background: rgba(0, 0, 0, 0.5);
     position: fixed;
-    inset: 0px;
+    top: 70px;
+    left: calc((100vw - var(--form-box-width)) / 2);
     z-index: 10;
+
 }
-.bound-top {
-    width: 100%;
-    height: 60px;
-    margin-bottom: 10px;
-    background: transparent;
-    z-index: 20;
+// .bound-top {
+//     width: 100%;
+//     height: 60px;
+//     margin-bottom: 10px;
+//     background-color: transparent;
+//     z-index: 10;
+// }
+
+.Form-box{
+   height: 500px ;
 }

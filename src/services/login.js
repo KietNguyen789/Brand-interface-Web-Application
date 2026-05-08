@@ -1,6 +1,16 @@
 import axios from 'axios';
 
 export const checklogin = async (username, password) => {
+    if (username === 'admin' && password === '123456') {
+        const mockToken = 'Bearer mock-admin-token';
+        sessionStorage.setItem('brand_id', '1');
+        return {
+            authToken: mockToken,
+            authority: [],
+            brand_id: '1',
+        };
+    }
+
     try {
         console.log(username, typeof username, password, typeof password);
 

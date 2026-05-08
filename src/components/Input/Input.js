@@ -117,7 +117,8 @@ function Input({ label, isRequired, onBlur, onChange, error, placeholder, type, 
     };
     return (
         <>
-            <p className={cx('input-label')}>
+        <div>
+   <p className={cx('input-label')}>
                 {label} {isRequired && <span style={{ color: 'red' }}>*</span>}
             </p>
             <input
@@ -130,6 +131,8 @@ function Input({ label, isRequired, onBlur, onChange, error, placeholder, type, 
                 className={cx('inputinfo')}
                 placeholder={error || placeholder}
             ></input>
+            </div>
+         
         </>
     );
 }

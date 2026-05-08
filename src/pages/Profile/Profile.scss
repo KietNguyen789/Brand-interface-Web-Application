@@ -12,3 +12,12 @@
 .input-box + .input-box {
     margin-top: 12px;
 }
+.event-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .input-box{
+        width: 100%;
+    }
+}

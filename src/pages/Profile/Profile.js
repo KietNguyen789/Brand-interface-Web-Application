@@ -60,7 +60,8 @@ function Profile() {
 
     const listinput = (
         <>
-            <div className={cx('input-box')}>
+        <div className={cx('event-form')}>
+<div className={cx('input-box')}>
                 <Input
                     label="Name"
                     isRequired
@@ -117,6 +118,8 @@ function Profile() {
                     value={formatDateForInput(data.end_date)}
                 />
             </div>
+            </div>
+            
         </>
     );
 

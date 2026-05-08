@@ -120,19 +120,15 @@ function SubHeader({ id }) {
     const handleChangeInputRecord = (itemId, value) => {
         updateInputCount(itemId, value);
     };
-    const handlesavechosesub = async ()=>{
-        for(const key in counts)
-        { let index = 0;
-            if (counts.hasOwnProperty(key) ) {  // Kiểm tra xem key có phải là của đối tượng hiện tại không (không phải từ prototype chain)
-               if(counts[key] > 0)
-                {
-                    console.log('info: ',id,voucher[index].qr_code,counts[key],voucher[index].description, voucher[index].expiration_date, voucher[index].status);
-                    console.log('info: ',typeof id,typeof voucher[index].qr_code,typeof  Number(counts[key]),typeof voucher[index].description,typeof  voucher[index].expiration_date,typeof  voucher[index].status);
-                    await savesub(id,voucher[index].qr_code,Number(counts[key]),voucher[index].description, voucher[index].expiration_date, voucher[index].status )}
-              }
-           index= index+1;
+    const handlesavechosesub = async () => {
+        for (const key in counts) {
+            if (counts.hasOwnProperty(key) && counts[key] > 0) {
+                const v = voucher.find(v => v._id === key);
+                if (!v) continue;
+                await savesub(id, v.qr_code, Number(counts[key]), v.description, v.expiration_date, v.status);
+            }
         }
-    }
+    };
     return (
         <div className="wrapper-sub-header">
             <div className="sub-menu">
@@ -165,15 +161,15 @@ function SubHeader({ id }) {
                         {voucher.map((voucher, index) => (
                             <div className={cx('sub-menu-item')}>
                                 <Record key={index} id={index} data={voucher} type={'voucher'} />
-                                <button onClick={() => handlePlus(voucher.voucher_code)} primary className={cx('item-btn')}>
+                                <button onClick={() => handlePlus(voucher._id)} primary className={cx('item-btn')}>
                                     +
                                 </button>
                                 <input
-                                    onChange={(e) => handleChangeInputRecord(voucher.voucher_code, e.target.value)}
+                                    onChange={(e) => handleChangeInputRecord(voucher._id, e.target.value)}
                                     className={cx('item-input')}
-                                    value={counts[voucher.voucher_code] || 0}
+                                    value={counts[voucher._id] || 0}
                                 />
-                                <button onClick={() => handleMinus(voucher.voucher_code)} primary className={cx('item-btn')}>
+                                <button onClick={() => handleMinus(voucher._id)} primary className={cx('item-btn')}>
                                     -
                                 </button>
                             </div>
