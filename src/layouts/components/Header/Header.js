@@ -49,15 +49,15 @@ function Header() {
                 ],
             },
         },
-        {
-            icon: <FontAwesomeIcon icon={faQuestionCircle}></FontAwesomeIcon>,
-            title: 'Feedback and Help',
-            to: '/feedback',
-        },
-        {
-            icon: <FontAwesomeIcon icon={faKeyboard}></FontAwesomeIcon>,
-            title: 'Keyboard shortcuts',
-        },
+        // {
+        //     icon: <FontAwesomeIcon icon={faQuestionCircle}></FontAwesomeIcon>,
+        //     title: 'Feedback and Help',
+        //     to: '/feedback',
+        // },
+        // {
+        //     icon: <FontAwesomeIcon icon={faKeyboard}></FontAwesomeIcon>,
+        //     title: 'Keyboard shortcuts',
+        // },
     ];
     // handle logic when user chose item in menu
     const handleMenuChange = (menuItem) => {
@@ -70,29 +70,29 @@ function Header() {
         }
     };
     const userMenu = [
-        {
-            icon: <FontAwesomeIcon icon={faUser} />,
-            title: 'View profile',
-            to: '/@hoaa',
-        },
-        {
-            icon: <FontAwesomeIcon icon={faCoins} />,
-            title: 'Get coins',
-            to: '/coin',
-        },
+        // {
+        //     icon: <FontAwesomeIcon icon={faUser} />,
+        //     title: 'View profile',
+        //     to: '/@hoaa',
+        // },
+        // {
+        //     icon: <FontAwesomeIcon icon={faCoins} />,
+        //     title: 'Get coins',
+        //     to: '/coin',
+        // },
 
-        {
-            icon: <FontAwesomeIcon icon={faGear} />,
-            title: 'Settings',
-            to: '/Settings',
-        },
+        // {
+        //     icon: <FontAwesomeIcon icon={faGear} />,
+        //     title: 'Settings',
+        //     to: '/Settings',
+        // },
         ...MENU_ITEMS,
-        {
-            icon: <FontAwesomeIcon icon={faSignOut} />,
-            title: 'Log out',
-            href: 'http://localhost:5173/signin',
-            separate: true,
-        },
+        // {
+        //     icon: <FontAwesomeIcon icon={faSignOut} />,
+        //     title: 'Log out',
+        //     href: 'http://localhost:5173/signin',
+        //     separate: true,
+        // },
     ];
 
     const numbermessage = 12;
