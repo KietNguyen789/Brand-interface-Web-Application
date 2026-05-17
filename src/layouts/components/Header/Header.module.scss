@@ -14,7 +14,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background-color: var(--white);
+    background-color: var(--primary);
     z-index: 30;
 }
 .inner {
@@ -27,7 +27,7 @@
     padding-left: 16px;
     align-items: center;
     justify-content: space-between;
-    background: var(--gray);
+    background: var(--primary);
 }
 .logo-link {
     // do theo a va the div dang nam theo chieu doc

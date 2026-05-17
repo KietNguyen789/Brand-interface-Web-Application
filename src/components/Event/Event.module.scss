@@ -6,15 +6,20 @@
     padding: 10px 16px;
     cursor: pointer;
     &:hover {
-        background-color: var(--record-color) ;
-        // opacity: 50%;
+        background-color: #fff8f6;
+        border-color: var(--primary);
+        box-shadow: 0 4px 16px rgba(238, 77, 45, 0.2);
+        transform: translateY(-2px);
+        transition: all 0.2s ease;
     }
     min-height: 250px;
     min-width: 250px;
-    background-color: buttonface;
-    border-radius: 10px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
     margin: 0 6px 20px var(--left-dis);
     font-size: 1.7rem;
+    box-shadow: 0 2px 12px rgba(232, 49, 90, 0.08);
+    border: 1px solid var(--border-color);
 
 }
 

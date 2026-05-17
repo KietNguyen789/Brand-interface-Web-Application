@@ -14,14 +14,14 @@
     border-radius: 4px;
     color: var(--text-color);
     &.active {
+        color: var(--primary);
         .icon {
-            // display: none;
-            //         }
             color: var(--primary);
         }
     }
     &:hover {
-        background-color: rgba(22, 24, 35, 0.03);
+        background-color: var(--hover-buttonface-color);
+        color: var(--primary);
     }
     transition: background-color 200ms ease-in-out;
 }

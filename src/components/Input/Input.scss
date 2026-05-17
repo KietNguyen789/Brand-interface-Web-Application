@@ -2,7 +2,7 @@
     // background: #ffffff url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
     flex: 1;
     //min-height: 22px;
-    border: 1px solid #dddfe2;
+    border: 1px solid var(--border-color);
     color: var(--text-color);
     font-family: var(--font-family);
     font-size: 1.7rem;
@@ -32,7 +32,7 @@ input::-webkit-file-upload-button {
     border-radius: 20px;
     cursor: pointer;
     background-color: var();
-    border: 1px solid #dddfe2;
+    border: 1px solid var(--border-color);
     // khong select duoc content cua nut
     -webkit-user-select: none; // safari
     user-select: none;

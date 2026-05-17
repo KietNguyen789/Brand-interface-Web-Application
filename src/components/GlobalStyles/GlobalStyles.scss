@@ -2,27 +2,28 @@
 //@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --primary: rgb(254, 44, 85);
+    --primary: #ee4d2d;
 
     // default layout
     --default-layout-header-height: 60px;
     --default-layout-width: 100vw;
     --ratio: 100vw / 1528;
-    --black: rgb(22, 24, 35);
+    --black: #333333;
     --white: #fff;
-    --text-color: rgb(22, 24, 35);
+    --text-color: #333333;
     --default-layout-horizontal-spacer: 24px;
     --font-family: 'TikTokFont', sans-serif;
     --font-family-display: 'TikTokDisplayFont', sans-serif;
-    --gray: rgba(22, 24, 35, 0.9);
-    --light-primary: rgba(254, 44, 85, 0.5);
+    --gray: #ee4d2d;
+    --light-primary: rgba(238, 77, 45, 0.15);
     --light-check: rgba(32, 213, 236);
     --left-dis: 24px;
-    --hover-buttonface-color: rgba(22, 24, 35, 0.03);
-    //--height-plus:
+    --hover-buttonface-color: rgba(238, 77, 45, 0.08);
     --height-record: 57px;
-    --light-pink: #FFC0CB;
-    --record-color:#F8E6D4;
+    --light-pink: #f5f5f5;
+    --record-color: #fff8f6;
+    --card-bg: #ffffff;
+    --border-color: #e8e8e8;
     --form-box-width: 500px;
 }
 * {
